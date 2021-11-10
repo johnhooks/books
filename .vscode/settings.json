@@ -1,0 +1,33 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/tsconfig.tsbuildinfo": false
+  },
+  "search.exclude": {
+    "lib/**": true,
+    "node_modules/**": true,
+    "package-lock.json": true
+  },
+  "editor.quickSuggestionsDelay": 1000,
+  "typescript.suggest.completeJSDocs": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    "./vscode/**",
+    "./dist/**"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["DOM", "DOM.Iterable", "es2020"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true
+  },
+}
