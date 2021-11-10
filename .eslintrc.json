@@ -18,18 +18,18 @@
     },
     "import/resolver": {
       // This setting made modules that imported date-fns really slow for some reason.
-      // "typescript": {
-      //   "alwaysTryTypes": true
-      // },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "tsconfig.json",
+          "tests/tsconfig.json"
+        ]
+      },
       "node": {
         "extensions": [".js", ".ts"]
       },
       "alias": {
-        "map": [
-          ["@johnhooks/lib-api", "./packages/lib-api/src"],
-          ["@johnhooks/lib-core", "./packages/lib-core/src"],
-          ["@johnhooks/lib-web", "./packages/lib-web/src"]
-        ],
+        "map": [],
         "extensions": [".js", ".ts" ]
       }
     }

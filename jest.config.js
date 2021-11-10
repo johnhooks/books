@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   preset: "ts-jest",
   testEnvironment: "node",
   moduleNameMapper: {
@@ -8,7 +8,7 @@ module.exports = {
     "^.+\\.(ts|tsx)$": "ts-jest",
   },
   // Run before the test framework is installed in the environment.
-  setupFiles: ["<rootDir>/tests/setup-tests.js"],
+  setupFiles: ["<rootDir>/tests/setup-tests.ts"],
   // Run after the test framework has been installed in the environment.
   setupFilesAfterEnv: [],
 };

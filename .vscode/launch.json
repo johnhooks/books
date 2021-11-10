@@ -7,9 +7,9 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/src/index.ts",
-      "preLaunchTask": "npm: build:cjs",
+      "preLaunchTask": "npm: build",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "runtimeArgs": ["--enable-source-maps", "--require", "dotenv/config"],
+      "runtimeArgs": [],
       "sourceMaps": true
     }
   ]

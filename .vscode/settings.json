@@ -29,5 +29,9 @@
     "**/.git/objects/**",
     "./vscode/**",
     "./dist/**"
+  ],
+  "cSpell.words": [
+    "nargs",
+    "tsbuildinfo"
   ]
 }

@@ -2,24 +2,22 @@
   "name": "@johnhooks/books",
   "version": "0.1.0",
   "description": "",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "type": "module",
+  "module": "./dist/index.js",
   "source": "src/index.ts",
-  "types": "./dist/esm/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
+      "default": "./dist/index.js"
     },
     "./plugins": {
-      "require": "./dist/cjs/plugins/index.js",
-      "default": "./dist/esm/plugins/index.js"
+      "default": "./dist/plugins/index.js"
     }
   },
   "typesVersions": {
     "*": {
       "plugins": [
-        "./dist/esm/plugins/index.d.ts"
+        "./dist/plugins/index.d.ts"
       ]
     }
   },
@@ -28,14 +26,12 @@
     "dist"
   ],
   "bin": {
-    "books": "./dist/cjs/cli.js"
+    "books": "./dist/cli.js"
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc --build tsconfig.esm.json",
-    "build:cjs": "tsc --build tsconfig.cjs.json",
-    "dev": "tsc --build tsconfig.cjs.json --watch",
+    "build": "tsc --build tsconfig.build.json",
+    "dev": "tsc --build tsconfig.build.json --watch",
     "test": "jest"
   },
   "repository": {
