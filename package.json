@@ -45,9 +45,9 @@
   },
   "homepage": "https://github.com/johnhooks/books#readme",
   "dependencies": {
-    "@dinero.js/currencies": "2.0.0-alpha.1",
+    "@dinero.js/currencies": "2.0.0-alpha.8",
     "date-fns": "^2.25.0",
-    "dinero.js": "^2.0.0-alpha",
+    "dinero.js": "^2.0.0-alpha.8",
     "yargs": "^17.2.1"
   },
   "devDependencies": {

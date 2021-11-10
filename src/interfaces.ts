@@ -30,3 +30,15 @@ export interface GenPaycheckArgs {
   payee: string;
   wage: string;
 }
+
+export interface Tax {
+  amount: number;
+  scale: number;
+}
+
+export interface Rates {
+  socialSecurityEmployer: Tax;
+  socialSecurityEmployee: Tax;
+  medicaidEmployer: Tax;
+  medicaidEmployee: Tax;
+}

@@ -10,7 +10,9 @@
       "preLaunchTask": "npm: build",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
       "runtimeArgs": [],
-      "sourceMaps": true
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }

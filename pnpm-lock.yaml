@@ -1,13 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@dinero.js/currencies': 2.0.0-alpha.1
+  '@dinero.js/currencies': 2.0.0-alpha.8
   '@types/jest': ^27.0.2
   '@types/node': ^16.11.6
   '@typescript-eslint/eslint-plugin': ^5.2.0
   '@typescript-eslint/parser': ^5.2.0
   date-fns: ^2.25.0
-  dinero.js: ^2.0.0-alpha
+  dinero.js: ^2.0.0-alpha.8
   dotenv: ^10.0.0
   eslint: 7.32.0
   eslint-config-prettier: ^8.3.0
@@ -25,7 +25,7 @@ specifiers:
   yargs: ^17.2.1
 
 dependencies:
-  '@dinero.js/currencies': 2.0.0-alpha.1
+  '@dinero.js/currencies': 2.0.0-alpha.8
   date-fns: 2.25.0
   dinero.js: 2.0.0-alpha.8
   yargs: 17.2.1
@@ -421,10 +421,6 @@ packages:
     resolution: {integrity: sha512-3jaw2j6J/SshlCZz5KhHkh8zP47HRmt9RpnjR0BJs2awpweVuZIyyX9qzGVUEVpml9IwzQ1U+YdXevhOxtcDgg==}
     dependencies:
       '@dinero.js/currencies': 2.0.0-alpha.8
-    dev: false
-
-  /@dinero.js/currencies/2.0.0-alpha.1:
-    resolution: {integrity: sha512-JoKY6q3AOm2II44qLp6VMGn+j+p6QC39m3DFogKZXsucWIIvzt7c2v04DZrrHWLNnDYNzITOnbQ7f2pGbONjig==}
     dev: false
 
   /@dinero.js/currencies/2.0.0-alpha.8:
