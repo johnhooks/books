@@ -1,7 +1,3 @@
-// import type { Dinero, Transformer } from "dinero.js";
-// import { dinero, toFormat } from "dinero.js";
-// import currencies from "@dinero.js/currencies";
-
 import type { Rates } from "./interfaces.js";
 
 export const taxRates: Record<number, Rates> = {

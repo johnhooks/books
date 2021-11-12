@@ -6,6 +6,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -17,13 +18,8 @@
       "@typescript-eslint/parser": [".js", ".ts"]
     },
     "import/resolver": {
-      // This setting made modules that imported date-fns really slow for some reason.
       "typescript": {
-        "alwaysTryTypes": true,
-        "project": [
-          "tsconfig.json",
-          "tests/tsconfig.json"
-        ]
+        "alwaysTryTypes": true
       },
       "node": {
         "extensions": [".js", ".ts"]
@@ -67,7 +63,6 @@
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "@typescript-eslint/no-var-requires": ["error"]
-        // "@typescript-eslint/explicit-module-boundary-types": ["error"]
       }
     }
   ],

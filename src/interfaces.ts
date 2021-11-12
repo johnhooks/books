@@ -1,9 +1,13 @@
 import type { Dinero } from "dinero.js";
 
+export type Maybe<T> = T | null;
+
+export type Tags = string | string[];
+
 export interface LineItem {
   account: string;
   amount?: Dinero<number>;
-  tags?: string | string[];
+  tags?: Tags;
 }
 
 export interface Transaction {
@@ -26,9 +30,9 @@ export interface Paycheck {
 
 export interface GenPaycheckArgs {
   date: Date;
-  federalWithholding?: string;
+  federalWithholding: Dinero<number>;
   payee: string;
-  wage: string;
+  wage: Dinero<number>;
 }
 
 export interface Tax {
@@ -36,9 +40,11 @@ export interface Tax {
   scale: number;
 }
 
-export interface Rates {
-  socialSecurityEmployer: Tax;
-  socialSecurityEmployee: Tax;
-  medicaidEmployer: Tax;
-  medicaidEmployee: Tax;
+export interface PayrollTaxes<T> {
+  socialSecurityEmployer: T;
+  socialSecurityEmployee: T;
+  medicaidEmployer: T;
+  medicaidEmployee: T;
 }
+
+export type Rates = PayrollTaxes<Tax>;
