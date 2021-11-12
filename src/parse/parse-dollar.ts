@@ -1,4 +1,4 @@
-const twoDecimalPlaceNumberRegex = /(\d+).\d{2}/;
+const twoDecimalPlaceNumberRegex = /(\d+)\.(\d{2})/;
 
 export function parseDollar(raw: string): number {
   const match = twoDecimalPlaceNumberRegex.exec(raw);
